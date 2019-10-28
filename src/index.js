@@ -29,7 +29,6 @@ $("document").ready(function(){
     .then(response => response.json())
     .then(data => {
       let link = data.message;
-      console.log(link)
       $thisBox.css("background-image", `url(${link})`)
       $thisBox.css("background-repeat", `no-repeat`)
       $thisBox.css("background-size", `auto`)
