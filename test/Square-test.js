@@ -16,15 +16,20 @@ describe('Square', () => {
 
   describe('Instance Properties', () => {
     it('should take a new length and width', () => {
-      const rect = new Square(10, 20)
-      expect(rect.length).to.equal(10);
-      expect(rect.width).to.equal(20);
+      const newSquare = new Square(null, 10, 20);
+      expect(newSquare.length).to.equal(10);
+      expect(newSquare.width).to.equal(20);
     });
 
     it('should have an id', () => {
       expect(defaultSquare).to.have.property('id');
       expect(defaultSquare.id).to.exist;
     });
+
+    it('should be able to accept an id', () => {
+      let identifiedSquare = new Square(1);
+      expect(identifiedSquare.id).to.equal(1);
+    })
 
   })
 
