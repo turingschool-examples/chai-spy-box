@@ -1,7 +1,7 @@
 const Rectangle = require("./Rectangle");
 
 class Square extends Rectangle {
-  constructor(length, width, id = Date.now()) {
+  constructor(id = Date.now(), length, width) {
     super(length, width);
     this.id = id;
     this.fox = null;
