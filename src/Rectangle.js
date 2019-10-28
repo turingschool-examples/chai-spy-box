@@ -4,7 +4,7 @@ class Rectangle {
     this.width = width;
   }
 
-  area() {
+  getArea() {
     return this.length * this.width;
   }
 }

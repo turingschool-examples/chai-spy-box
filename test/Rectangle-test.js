@@ -13,7 +13,7 @@ describe('Rectangle', () => {
     expect(rectangle).to.be.an.instanceOf(Rectangle);
   })
 
-  describe('initia properties', () => {
+  describe('Instance properties', () => {
     it('should have a default length and width', () => {
       expect(rectangle.length).to.equal(100);
       expect(rectangle.width).to.equal(100);
@@ -27,6 +27,6 @@ describe('Rectangle', () => {
   });
 
   it('should be able to calculate its own area', () => {
-    expect(rectangle.area()).to.equal(10000);
+    expect(rectangle.getArea()).to.equal(10000);
   })
 })
