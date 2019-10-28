@@ -36,11 +36,11 @@ describe('Square', () => {
     });
   });
 
-  it('should save its stats locally', () => {
+  it.skip('should save its stats locally', () => {
 
   });
 
-  describe('getFox', () => {
+  describe.skip('getFox', () => {
     it('should start out with no fox', () => {
       expect(defaultSquare.fox).to.be.null;
     });
